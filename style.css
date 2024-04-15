@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('images/background-stars-00f213fd.svg');
+    background-color: rgb(7, 7, 36);
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+button {
+    background: none;
+    border: none;
+    color: unset;
+}
+.burgerr {
+    position: absolute;
+    background-color: rgb(7, 7, 36);
+    height: 700px;
+    width: 800px;
+    top: -1000px;
+    z-index: 3;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+.title {
+    font-size: 28px;
+    font-family: "Antonio", sans-serif;
+    margin: 16px 0 16px 24px;
+    font-weight: 400;
+    color: white;
+    position: flex;
+}
+
+.planetList {
+    position: relative;
+    font-size: 20px;
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    gap: 20px;
+}
+
+.planetsss {
+    text-decoration: none;
+    font-size: 15px;
+    margin: 2px 0 20px 24px;
+    cursor: pointer;
+    color: white;
+}
+.plaentsss:hover {
+    color: gray;
+}
+.a:hover{
+    color: gray;
+}
+.planetss {
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+    margin-left: 5px;
+}
+.separator, .separator2 {
+    width: 100%;
+    height: 2px;
+    position: relative;
+    background-color: gray;
+    opacity: .7;
+}
+.separator {
+    margin-top: 0px;
+}
+.a {
+    text-decoration: none;
+    color: white;
+}
+.separator2 {
+    margin-top: 0.5px;
+}
+.planets-list-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0 0 23px 24px;
+}
+.burgerList {
+    position: absolute;
+    top: 70px;
+    font-size: 20px;
+    font-family: "League Spartan", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(7, 7, 36);
+    z-index: 5;
+}
+.plane {
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+}
+
+.mercury {
+    background-color: rgb(65, 158, 187);
+}
+.venus {
+    background-color: rgb(247, 204, 127);
+}
+.earth {
+    background-color: rgb(84, 91, 254);
+}
+.mars {
+    background-color: rgb(255, 106, 69);
+}
+.jupiter {
+    background-color: rgb(236, 173, 122);
+}
+.saturn {
+    background-color: rgb(252, 203, 107);
+}
+.uranus {
+    background-color: rgb(101, 240, 213);
+}
+.neptune {
+    background-color: rgb(73, 126, 250);
+}
+.center {
+    margin-top: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+.planetPic {
+    margin: 100px;
+    position: relative;
+}
+
+#planetP {
+    display: none;
+}
+
+.planetPicc {
+    width: 270px;
+    height: 270px;
+}
+
+.geology-img {
+    position: absolute;
+    width: 80px;
+    height: 90px;
+    left: 145px;
+    top: 280px;
+}
+.mainInfoDiv {
+    display: flex;
+    text-align: center;
+}
+.stabilisator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+.planetName {
+    font-size: 40px;
+    font-family: "Antonio", sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+.planetDescription {
+    margin: 16px 24px 32px;
+    text-align: center;
+    font-family: League Spartan;
+    font-style: normal;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: left;
+    margin-left: 10px;
+
+}
+.wikiInfo, .wikipedia {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-family: "League Spartan", sans-serif;
+    position: relative;
+    margin-left: 10px;
+}
+.nmb {
+    opacity: .5;
+    margin: 0px 17px 0 20px;
+}
+.infoResponsiveDiv { 
+    position: relative;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    display: none;
+    margin-top: 5px;
+    gap: 20px;
+    
+
+}
+
+.infoResponsive {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    display: none;
+    opacity: .7;
+    z-index: 1;
+}
+
+.info {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, .2);
+    margin: 24px 20px 0 20px;
+    height: 40px;
+    width: 281px;
+    text-align: left;
+    font-family: "League Spartan", sans-serif;
+    font-size: 12px;
+    color: white;
+}
+.info:hover {background-color:gray}
+
+.aboutPlanets {
+    display: flex;
+    width: 750px;
+    margin-bottom: 10px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+.smallInfo{ 
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+}
+.span {
+    opacity: .5;
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 24px;
+    letter-spacing: .727273px;
+    color: white;
+
+}
+
+.p {
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 24px;
+    letter-spacing: .727273px; 
+}
+.Info{
+    display: none;
+}
+.border {
+    border-top: 4px turquoise solid;
+    padding-top: 39px;
+}
+.infoResponsive:hover {
+    color: gray;
+}
+
+.active {
+    border-top: 4px turquoise solid;
+    padding-top: 39px;
+} 
+.burger {
+    position: relative;
+    color: white;
+    margin-top: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+  
+@media (max-width: 800px){
+    .burger {
+        display: flex;
+    }
+    .planetList {
+        font-size: 11px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        gap: 20px;
+        font-family: "League Spartan", sans-serif;
+        display: none;
+    }
+    .separator2 {
+        margin-top: 0px;
+    }
+    .info {
+        display: none;
+    }
+    .header {
+        margin:  0 24px 22px 24px;
+    }
+    .aboutPlanets {
+        width: 100%;
+        flex-direction: column;
+        height: 200px;
+    }
+    .smallInfo{ 
+        height: 50px;
+        width: 100%;
+    }
+    .infoResponsive {
+        display: flex;
+    }
+    .infoResponsiveDiv {
+        display: flex;
+    }
+    .planetPicc {
+        width: 150px;
+        height: 150px;
+        
+    }
+    }
+    
+
+
+

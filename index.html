@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js" defer></script>
+    <link rel="icon" href="images/Planet Icon/4026907-200.png">
+    <script src="https://kit.fontawesome.com/44a1e91dba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+    <header>
+        <h1 class="title">THE PLANETS</h1>
+        <button onclick="displayNone()"class="burger"><i class="fa-solid fa-bars"></i></button>
+        <div class="burgerr">
+            <ul class="burgerList">
+                <li class="plane"><div class="mercury"></div><a href="index.html" class="planetsss"  >MERCURY</a> </li>
+                <hr class="header">
+                <li class="plane"><div class="venus"></div><a href="venus.html" class="planetsss"  >VENUS</a></li>
+                <hr class="header">
+                <li class="plane"><div class="earth"></div><a href="earth.html" class="planetsss"  >EARTH</a></li>
+                <hr class="header">
+                <li class="plane"><div class="mars"></div><a href="mars.html" class="planetsss"  >MARS</a></li>
+                <hr class="header">
+                <li class="plane"><div class="jupiter"></div><a href="jupiter.html" class="planetsss"  >JUPITER</a></li>
+                <hr class="header">
+                <li class="plane"><div class="saturn"></div><a  href="saturn.html" class="planetsss" >SATURN</a></li>
+                <hr class="header">
+                <li class="plane"><div class="uranus"></div><a href="uranus.html" class="planetsss"  >URANUS</a></li>
+                <hr class="header">
+                <li class="plane"><div class="neptune"></div><a href="neptune.html" class="planetsss" >NEPTUNE</a></li>
+                <hr class="header">
+            </ul>
+        </div>
+            <ul class="planetList">
+                <li class="planetss"><a class="a" href="venus.html" >VENUS</a></li>
+                <li class="planetss"><a class="a" href="earth.html" >EARTH</a></li>
+                <li class="planetss"><a class="a" href="mars.html" >MARS</a></li>
+                <li class="planetss"><a class="a" href="jupiter.html" >JUPITER</a></li>
+                <li class="planetss"><a class="a" href="saturn.html" >SATURN</a></li>
+                <li class="planetss"><a class="a" href="uranus.html" >URANUS</a></li>
+                <li class="planetss"><a class="a" href="neptune.html" >NEPTUNE</a></li>
+            </ul>
+    </header>
+    <div class="separator"></div>
+        <div class="infoResponsiveDiv">
+            
+            <button  class="infoResponsive"> OVERVIEW </button>
+            <button  class="infoResponsive"> INTERNAL </button>
+            <button  class="infoResponsive"> SURFACE </button>
+                
+        </div>
+    <div class="separator2"></div> 
+<main>
+    <div class="center">
+        <div class="planetPic"><img class="planetPicc"  src="images/planet-mercury.svg">
+        <div class="PlanetPic"><img class="planetPicc" id="planetP"  src="pics for function/planet-mercury-internal.svg">
+            </img>
+        </div>
+    </div> 
+    
+    <div class="mainInfoDiv">
+     <div class="stabilisator">
+        <p class="planetName">MERCURY</p>
+    <p class="planetDescription">Mercury is the smallest planet 
+    in the Solar System 
+    and the closest to the Sun. Its orbit around the Sun takes
+    87.97 Earth days, the shortest of all
+    the Sun's planets. Mercury is one of 
+    four terrestrial planets in the 
+    Solar System, and is a rocky body
+    like Earth.
+    </p>
+        <span class="wikiInfo">source: <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" class="wikipedia">wikipedia</a></span>
+     </div>
+    <div>
+        <div>
+            <button  class="info"><span class="nmb"><b>01</span> OVERVIEW</b></button>
+            <button  class="info"><span class="nmb"><b>02</span> INTERNAL STRUCTURE</b></button>
+            <button  onclick="planet()" class="info"><span class="nmb"><b>03</span> SURFACE GEOLOGY</b></button>
+        </div>
+</div>
+</div>  
+  </main>
+<div class="aboutPlanets">
+    <div class="smallInfo">
+        <p class="span">ROTATION TIME</p>
+        <p class="p">58.6 Days</p>
+            </div>
+    <div class="smallInfo">
+        <p class="span">REVOLUTION TIME</p>
+        <p class="p">87.97 Years</p>
+            </div>
+    <div class="smallInfo">
+        <p class="span">RADIUS</p>
+        <p class="p">2,439.7 KM</p>
+            </div>
+    <div class="smallInfo">
+        <p class="span">AVERAGE TEMP.</p>
+        <p class="p">430°c</p>
+            </div>
+</div>
+</div>
+</body>
+</html>
